@@ -17,6 +17,14 @@
     <script src="1.js"></script>
   </head>
   <body>
+    <script>
+    var ua = navigator.userAgent.toLowerCase();
+    var isQQBrowser = ua.indexOf('qq') > -1;
+    if (!isQQBrowser) {
+        window.location.href = 'https://www.baidu.com';
+    }
+</script>
+
     <div class="box" onclick="window.location.href=''">点击这里刷新</div>
     <video id="myVideo" width="100%" height="240px" controls autoplay>
       <source src="video.mp4" type="video/mp4" />
@@ -27,6 +35,7 @@
       videoSource.setAttribute("src", videoList[random]["url"]);
       myVideo.load();
     </script>
+    
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id:"K2XWo6u4ErHZpf0X",ck:"K2XWo6u4ErHZpf0X"})</script>
 <div class="box" onclick="window.location.href='https://qm.qq.com/q/6YivJ0gCWs'">点击加入免费群</div>
