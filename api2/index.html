@@ -19,6 +19,13 @@
     <script src="1.js"></script>
   </head>
   <body>
+        <script>
+    var ua = navigator.userAgent.toLowerCase();
+    var isQQBrowser = ua.indexOf('qq') > -1;
+    if (!isQQBrowser) {
+        window.location.href = 'https://www.baidu.com';
+    }
+</script>
     <div class="box" onclick="window.location.href=''">点击这里刷新</div>
     <video id="myVideo" width="100%" height="240px" controls autoplay>
       <source src="video.mp4" type="video/mp4" />
